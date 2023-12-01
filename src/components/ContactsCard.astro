@@ -1,0 +1,36 @@
+---
+import Card from "./Card/index.astro";
+import { LINKS } from "../lib/constants";
+---
+
+<Card colSpan="md:col-span-1" rowSpan="md:row-span-2">
+  <div class="h-full">
+    <header class="flex items-center">
+      <h1 class="text-white text-xl font-bold">
+        Let's start working together!
+      </h1>
+    </header>
+    <address class="flex flex-col mt-4">
+      <h2 class="text-gray-500">Contact Details</h2>
+      <p>issamagoudjil@yahoo.com</p>
+      <p>Algeria</p>
+    </address>
+    <div class="flex flex-col mt-4 w-fit">
+      <h2 class="text-gray-500">Socials</h2>
+      <ul>
+        <li>
+          <a href={LINKS.linkedin} target="https://www.linkedin.com/in/agoudjil-issam-622295292?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app&original_referer=https%3A%2F%2Fagoudjiliss.github.io%2F">Linkedin</a>
+        </li>
+        <li>
+          <a href={LINKS.github} target="https://github.com/Agoudjiliss">Github</a>
+        </li>
+        <li>
+          <a href={LINKS.medium} target="https://www.instagram.com/issam__.agoudjil/?igshid=OGQ5ZDc2ODk2ZA%3D%3D">Instagram</a>
+        </li>
+        <li>
+          <a href={LINKS.discord} target="">👨‍💻</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</Card>
